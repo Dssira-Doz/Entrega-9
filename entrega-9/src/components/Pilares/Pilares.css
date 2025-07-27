@@ -1,0 +1,43 @@
+.pilares {
+  background-color: #000000;
+  padding: 2rem 0;
+}
+
+.pilares__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pilares__card {
+  border: 2px solid #ffcc00;
+  padding: 2rem;
+  border-radius: 10px;
+  background: rgba(255, 204, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.pilares__card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(255, 204, 0, 0.2);
+}
+
+.pilares__card-title {
+  color: #ffcc00;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.pilares__card-text {
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .pilares__grid {
+    grid-template-columns: 1fr;
+    padding: 2rem 1rem;
+  }
+}
